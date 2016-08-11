@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 23
+    buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        applicationId "com.reddit.bs.reddit_client"
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile files('libs/com.android.volley-2014.12.21.jar')
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+}

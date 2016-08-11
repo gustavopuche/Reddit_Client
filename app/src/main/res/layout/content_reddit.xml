@@ -1,0 +1,22 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        android:text="@string/hello_gus"
+        android:id="@+id/textView"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/card_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

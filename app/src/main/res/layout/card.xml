@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/thumbnail" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:text="New Text"
+        android:id="@+id/date"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"
+        android:textColor="@color/Blau"
+        android:textSize="@dimen/abc_text_size_button_material"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="New Text"
+        android:id="@+id/title"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_below="@+id/date"
+        android:textColor="@color/Blau"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_below="@id/title"
+        android:layout_alignBottom="@id/thumbnail">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/author"
+            android:layout_below="@+id/date"
+            android:layout_toEndOf="@+id/score"
+            android:layout_weight="1"
+            android:textColor="@color/Blau"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/score"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@+id/thumbnail"
+            android:layout_weight="0.4"
+            android:textAlignment="textEnd"
+            android:textColor="@color/Blau"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/comments"
+            android:layout_below="@+id/date"
+            android:layout_toEndOf="@+id/author"
+            android:layout_weight="0.4"
+            android:textAlignment="textEnd"
+            android:textColor="@color/Blau"
+            android:paddingRight="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
